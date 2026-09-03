@@ -1,0 +1,12 @@
+{
+  "name": "senai-gitflow",
+  "version": "1.0.0",
+  "description": "Calculadora JavaScript simples (soma, subtração, divisão, multiplicação, raiz quadrada)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

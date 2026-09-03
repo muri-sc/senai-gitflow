@@ -4,4 +4,4 @@ function raizQuadrada(numero) {
   }
   return Math.sqrt(numero);
 }
-export default raizQuadrada;
+module.exports = raizQuadrada;

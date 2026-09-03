@@ -13,8 +13,8 @@ describe('raizQuadrada', () => {
     expect(raizQuadrada(2)).toBeCloseTo(1.4142135623730951);
   });
 
-  test('lança erro ao calcular a raiz quadrada de um número negativo', () => {
-    expect(() => raizQuadrada(-4)).toThrow('Não é possível calcular a raiz quadrada de um número negativo');
+  test('retorna null ao calcular a raiz quadrada de um número negativo', () => {
+    expect(raizQuadrada(-4)).toBeNull();
   });
 
   test('raiz quadrada de entrada não numérica resulta em NaN', () => {

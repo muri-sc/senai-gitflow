@@ -1,0 +1,20 @@
+name: Docker Tests
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t app .
+
+      - name: Run tests inside container
+        run: docker run --rm app

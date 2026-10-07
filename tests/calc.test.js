@@ -1,7 +1,7 @@
-import dividir from "../divisao";
-import { soma, subtracao } from "../index";
-import multiplicar from "../multi";
-import raizQuadrada from "../raizQuadrada";
+import { dividir } from "../src/operacoes/divisao.js";
+import { soma, subtracao } from "../src/operacoes/index.js";
+import { multiplicar } from "../src/operacoes/multi.js";
+import { raizQuadrada } from "../src/operacoes/raizQuadrada.js";
 
 describe("soma", () => {
     test("soma dois números positivos", () => {

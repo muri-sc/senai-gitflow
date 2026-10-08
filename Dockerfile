@@ -3,9 +3,10 @@ FROM node:22-alpine
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --omit=dev
 
-COPY divisao.js index.js multi.js raizQuadrada.js ./
-COPY tests/ ./tests/
+COPY src ./src
 
-CMD ["npm", "test"]
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]

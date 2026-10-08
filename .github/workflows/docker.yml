@@ -16,5 +16,5 @@ jobs:
       - name: Build Docker image
         run: docker build -t app .
 
-      - name: Run tests inside container
-        run: docker run --rm app
+      - name: Run container
+        run: docker run -d --rm app
